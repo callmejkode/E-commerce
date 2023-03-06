@@ -6,9 +6,11 @@ import ErrorPage from "./components/ErrorPage";
 import Home from "./components/Home";
 import Products from "./components/Products";
 import SingleProduct from "./components/SingleProduct";
+import Nav from "./components/Nav";
 function App() {
   return (
     <BrowserRouter>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
