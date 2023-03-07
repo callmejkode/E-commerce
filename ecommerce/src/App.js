@@ -7,6 +7,7 @@ import Home from "./components/homepage/Home";
 import Products from "./components/productspage/Products";
 import SingleProduct from "./components/productspage/SingleProduct";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
