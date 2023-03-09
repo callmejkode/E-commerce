@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AppContext } from "../../context/ProductContext";
 
 function HeroSection() {
+  const Myname = useContext(AppContext);
+  // console.log("kkk", Myname);
   return (
     <div className="container col-xxl-8 px-4 py-5">
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -19,7 +22,7 @@ function HeroSection() {
         </div>
         <div className="col-lg-6">
           <h1 className="display-5 fw-bold lh-1 mb-3">
-            Welcome to JKode store
+            Welcome to {Myname} store
           </h1>
           <p className="lead">
             Donec pulvinar elit in nisi pretium, ac facilisis velit vulputate.
