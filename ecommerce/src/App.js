@@ -8,7 +8,12 @@ import Products from "./components/productspage/Products";
 import SingleProduct from "./components/productspage/SingleProduct";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+// import { createContext, useState } from "react";
+
+// export const themeContext = createContext(null);
+
 function App() {
+  // const [theme, setTheme] = useState("light");
   return (
     <BrowserRouter>
       <Nav />
